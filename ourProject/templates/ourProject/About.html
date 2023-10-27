@@ -1,0 +1,439 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html style="font-size: 16px" lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="About Us, Who We are, Our Goals, What We Do, The Process, Our Future"
+    />
+    <meta name="description" content="" />
+    <title>About</title>
+    <link rel="stylesheet" href="{% static 'nicepage.css'%}" media="screen" />
+    <link rel="stylesheet" href="{% static 'About.css' %}" media="screen" />
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="{% static 'jquery.js'%}"
+      defer=""
+    ></script>
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="{% static 'nicepage.js'%}"
+      defer=""
+    ></script>
+    <meta name="generator" content="Nicepage 5.20.7, nicepage.com" />
+    <link
+      id="u-theme-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "",
+        "logo": "images/default-logo.png"
+      }
+    </script>
+    <meta name="theme-color" content="#478ac9" />
+    <meta property="og:title" content="About" />
+    <meta property="og:type" content="website" />
+    <meta data-intl-tel-input-cdn-path="intlTelInput/" />
+  </head>
+  <body
+    data-path-to-root="./"
+    data-include-products="false"
+    class="u-body u-xl-mode"
+    data-lang="en"
+  >
+    <header class="u-clearfix u-header u-header" id="sec-f6f5">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <a href="https://nicepage.com" class="u-image u-logo u-image-1">
+          <img
+            src="{% static 'images/UofT.jpg'%}"
+            class="u-logo-image u-logo-image-1"
+          />
+        </a>
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div
+            class="menu-collapse"
+            style="font-size: 1rem; letter-spacing: 0px"
+          >
+            <a
+              class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+              href="#"
+            >
+              <svg class="u-svg-link" viewBox="0 0 24 24">
+                <use
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#menu-hamburger"
+                ></use>
+              </svg>
+              <svg
+                class="u-svg-content"
+                version="1.1"
+                id="menu-hamburger"
+                viewBox="0 0 16 16"
+                x="0px"
+                y="0px"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <rect y="1" width="16" height="2"></rect>
+                  <rect y="7" width="16" height="2"></rect>
+                  <rect y="13" width="16" height="2"></rect>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1">
+              <li class="u-nav-item">
+                <a
+                  class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                  href="{% url 'index'%}"
+                  style="padding: 10px 20px"
+                  >Home</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                  href="{% url 'about'%}"
+                  style="padding: 10px 20px"
+                  >About</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                  href="{% url 'contact'%}"
+                  style="padding: 10px 20px"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div
+              class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav"
+            >
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul
+                  class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"
+                >
+                  <li class="u-nav-item">
+                    <a class="u-button-style u-nav-link" href="Home.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a class="u-button-style u-nav-link" href="About.html"
+                      >About</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a class="u-button-style u-nav-link" href="Contact.html"
+                      >Contact</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a class="u-button-style u-nav-link" href="Page-1.html"
+                      >Page 1</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section
+      class="u-align-center u-clearfix u-image u-shading u-section-1"
+      src=""
+      data-image-width="768"
+      data-image-height="432"
+      id="sec-db34"
+    >
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h1 class="u-text u-text-default u-title u-text-1">About Us</h1>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-2" id="sec-5e41">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div
+              class="u-align-center u-container-style u-list-item u-repeater-item"
+            >
+              <div
+                class="u-container-layout u-similar-container u-container-layout-1"
+              >
+                <div
+                  alt=""
+                  class="u-image u-image-circle u-image-1"
+                  src=""
+                  data-image-width="2560"
+                  data-image-height="2945"
+                ></div>
+                <h5 class="u-text u-text-1">Uyem Lam (Albert) Ho</h5>
+                <p class="u-text u-text-2">First Year at UTSC</p>
+              </div>
+            </div>
+            <div
+              class="u-align-center u-container-style u-list-item u-repeater-item"
+            >
+              <div
+                class="u-container-layout u-similar-container u-container-layout-2"
+              >
+                <div
+                  alt=""
+                  class="u-image u-image-circle u-image-2"
+                  src=""
+                  data-image-width="2442"
+                  data-image-height="2403"
+                ></div>
+                <h5 class="u-text u-text-3">Zay Lin (Zacky) Aung</h5>
+                <p class="u-text u-text-4">First Year at UTSC</p>
+              </div>
+            </div>
+            <div
+              class="u-align-center u-container-style u-list-item u-repeater-item"
+            >
+              <div
+                class="u-container-layout u-similar-container u-container-layout-3"
+              >
+                <div
+                  alt=""
+                  class="u-image u-image-circle u-image-3"
+                  src=""
+                  data-image-width="3024"
+                  data-image-height="4032"
+                ></div>
+                <h5 class="u-text u-text-5">Vignesh Veerakumar</h5>
+                <p class="u-text u-text-6">First Year at UTSC</p>
+              </div>
+            </div>
+            <div
+              class="u-align-center u-container-style u-list-item u-repeater-item"
+            >
+              <div
+                class="u-container-layout u-similar-container u-container-layout-4"
+              >
+                <div
+                  alt=""
+                  class="u-image u-image-circle u-image-4"
+                  src=""
+                  data-image-width="409"
+                  data-image-height="456"
+                ></div>
+                <h5 class="u-text u-text-7">Taemin Lee</h5>
+                <p class="u-text u-text-8">First Year at UTSC</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-3" id="sec-948f">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div
+          class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1"
+        >
+          <div class="u-layout" style="">
+            <div class="u-layout-row" style="">
+              <div
+                class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-image-1"
+                src=""
+                data-image-width="201"
+                data-image-height="251"
+              >
+                <div
+                  class="u-container-layout u-valign-middle u-container-layout-1"
+                  src=""
+                ></div>
+              </div>
+              <div
+                class="u-align-left u-container-style u-layout-cell u-palette-1-base u-right-cell u-size-30 u-size-xs-60 u-layout-cell-2"
+              >
+                <div class="u-container-layout u-container-layout-2">
+                  <h2 class="u-text u-text-default u-text-1">Who We Are</h2>
+                  <p class="u-text u-text-2">
+                    We are the Brunelleschi Group. We are&nbsp;a group of 4
+                    passionate first-year developer. We named ourselves after
+                    Brunelleschi because he is renowned architech, who is known
+                    for his innovations. We&nbsp;strive to innovate like
+                    Brunelleschi and make the world a better place through our
+                    skills and new technology.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-4" id="sec-9d46">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div
+          class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1"
+        >
+          <div class="u-layout" style="">
+            <div class="u-layout-row" style="">
+              <div
+                class="u-align-left u-container-style u-grey-5 u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-layout-cell-1" src="">
+                <div class="u-container-layout u-container-layout-1">
+                  <h2 class="u-text u-text-default u-text-1">
+                    Our Goals<br />
+                  </h2>
+                  <p class="u-text u-text-2">
+                    As first years, we have seen others struggle to meet up with
+                    other first years. Thus, we have decided to create an web
+                    application where fellow first year, incoming students, and
+                    upper years can match with students of the same year. By
+                    doing so, we strive to create a more inclusive community
+                    where there are no students left out.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-shading u-size-30 u-size-xs-60 u-image-1"
+                data-image-width="612"
+                data-image-height="408"
+              >
+                <div
+                  class="u-container-layout u-container-layout-2"
+                  src=""
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-5" id="sec-7e41">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div
+          class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1"
+        >
+          <div class="u-layout" style="">
+            <div class="u-layout-row" style="">
+              <div
+                class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-image-1"
+                src=""
+                data-image-width="612"
+                data-image-height="477"
+              >
+                <div
+                  class="u-container-layout u-valign-middle u-container-layout-1"
+                  src=""
+                ></div>
+              </div>
+              <div
+                class="u-align-left u-container-style u-layout-cell u-palette-1-base u-right-cell u-size-30 u-size-xs-60 u-layout-cell-2"
+              >
+                <div class="u-container-layout u-container-layout-2">
+                  <h2 class="u-text u-text-default u-text-1">What We Do</h2>
+                  <p class="u-text u-text-2">
+                    Over a span of 2 weeks, we have collaborated to create a web
+                    application where fellow students and match with their peers
+                    of the same year. The students will sign up and fill out a
+                    form containing information about where they go to school
+                    and what they are interested in. Based on their input, we
+                    match them with a person with a similar profile.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-6" id="sec-192b">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div
+          class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1"
+        >
+          <div class="u-layout" style="">
+            <div class="u-layout-row" style="">
+              <div
+                class="u-align-left u-container-style u-grey-5 u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-layout-cell-1"
+                src=""
+              >
+                <div class="u-container-layout u-container-layout-1">
+                  <h2 class="u-text u-text-default u-text-1">The Process</h2>
+                  <p class="u-text u-text-2">
+                    For this web application, we have used Python and&nbsp;
+                    Django for the backend, and Nicepages for the frontend. Over
+                    2 weeks, we have tirelessly worked on this project, facing
+                    challenges and overcoming them together. Through this
+                    project, we have developed our communication skills and
+                    developed our technical skils.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-shading u-size-30 u-size-xs-60 u-image-1"
+                data-image-width="3024"
+                data-image-height="4032"
+              >
+                <div
+                  class="u-container-layout u-container-layout-2"
+                  src=""
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-7" id="sec-c626">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div
+          class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1"
+        >
+          <div class="u-layout" style="">
+            <div class="u-layout-row" style="">
+              <div
+                class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-image-1"
+                src=""
+                data-image-width="612"
+                data-image-height="344"
+              >
+                <div
+                  class="u-container-layout u-valign-middle u-container-layout-1"
+                  src=""
+                ></div>
+              </div>
+              <div
+                class="u-align-left u-container-style u-layout-cell u-palette-1-base u-right-cell u-size-30 u-size-xs-60 u-layout-cell-2"
+              >
+                <div class="u-container-layout u-container-layout-2">
+                  <h2 class="u-text u-text-default u-text-1">Our Future</h2>
+                  <p class="u-text u-text-2" style="font: 10px;">
+                    We have a big vision for this web application. In the
+                    future, we want to add many other schools and universities
+                    as we want every university to have an inclusive community.
+                    We wish to also add a chat system where first years can
+                    connect with other first years and a system where students
+                    can post about study group session.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
